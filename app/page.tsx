@@ -4,8 +4,8 @@ import { supabase } from '../lib/supabase'
 
 export default function Home() {
   const [page, setPage] = useState('store')
-  const [selectedProduct, setSelectedProduct] = useState(null)
-  const [products, setProducts] = useState([])
+  const [selectedProduct, setSelectedProduct] = useState<any>(null)
+  const [products, setProducts] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
   // Default products if database is empty
@@ -164,4 +164,4 @@ export default function Home() {
 
     </main>
   )
-}
+}h
